@@ -22,21 +22,21 @@ https://linuxize.com/post/how-to-install-python-3-on-centos-7/
 
 
 In order to enable SCL we need to install the CentOS SCL release file. It is part of the CentOS extras repository and can be installed by running the following command:
-
+...
 sudo yum install centos-release-scl
 sudo yum install rh-python36
 scl enable rh-python36 bash
 ** installs in /opt/rh/rh-python36/ **
-
+...
 ## Install salt using pip
 cd into folders create by Python 3.6 install, then run pip from there, must install development tools group first
+...
 sudo yum groupinstall 'Development Tools'
-
 pip install --upgrade pip
 pip install salt
 pip install salt-ssh
 cd /opt/rh/rh-python36/root/usr/bin/
-
+...
 ## Notes on virtualenv and using pip to create Development environments
 https://docs.saltstack.com/en/latest/topics/development/hacking.html
 
