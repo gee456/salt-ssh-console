@@ -8,6 +8,7 @@ This is a docker image setup with both Python 2.7.5 and Python 3.6.3 Python 2 is
 # Links of interest
 ## Installing salt-ssh for Pyhton 2
 https://repo.saltstack.com/#rhel
+```
 sudo yum install https://repo.saltstack.com/yum/redhat/salt-repo-latest-2.el7.noarch.rpm 
 sudo yum install salt-master
 sudo yum install salt-ssh
@@ -15,28 +16,28 @@ sudo yum install salt-ssh
 sudo yum install salt-syndic
 sudo yum install salt-cloud
 sudo yum install salt-api
-
+```
 
 ## Installing Python 3
 https://linuxize.com/post/how-to-install-python-3-on-centos-7/
 
 
 In order to enable SCL we need to install the CentOS SCL release file. It is part of the CentOS extras repository and can be installed by running the following command:
-...
+```
 sudo yum install centos-release-scl
 sudo yum install rh-python36
 scl enable rh-python36 bash
 ** installs in /opt/rh/rh-python36/ **
-...
+```
 ## Install salt using pip
 cd into folders create by Python 3.6 install, then run pip from there, must install development tools group first
-...
+```
 sudo yum groupinstall 'Development Tools'
 pip install --upgrade pip
 pip install salt
 pip install salt-ssh
 cd /opt/rh/rh-python36/root/usr/bin/
-...
+```
 ## Notes on virtualenv and using pip to create Development environments
 https://docs.saltstack.com/en/latest/topics/development/hacking.html
 
