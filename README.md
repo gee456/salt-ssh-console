@@ -28,7 +28,7 @@ sudo yum install rh-python36
 scl enable rh-python36 bash
 #installs in /opt/rh/rh-python36/
 
-##Install salt using pip
+## Install salt using pip
 cd into folders create by Python 3.6 install, then run pip from there, must install development tools group first
 sudo yum groupinstall 'Development Tools'
 
@@ -37,9 +37,9 @@ pip install salt
 pip install salt-ssh
 cd /opt/rh/rh-python36/root/usr/bin/
 
-##Notes on virtualenv and using pip to create Development environments
+## Notes on virtualenv and using pip to create Development environments
 https://docs.saltstack.com/en/latest/topics/development/hacking.html
 
-##Notes on removing Python 2 - do not try -
+## Notes on removing Python 2 - do not try -
 https://unix.stackexchange.com/questions/158567/how-to-yum-remove-python-gracefully
 
